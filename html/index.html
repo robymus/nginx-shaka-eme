@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<!-- required for HLS playback in Shaka where native HLS is not supported
+    <script src="mux.min.js"></script>
+-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/2.5.11/shaka-player.compiled.min.js" integrity="sha256-l7XUxLT0XBXW8Y69ELVxWkxqdN2eXjnoRtvz1omXJrg=" crossorigin="anonymous"></script>
+    <script src="player.js"></script>
+  </head>
+  <body>
+    <video id="video"
+           width="640"
+           controls autoplay></video>
+    <hr> 
+    <pre id="log"></pre>
+    <hr>
+    HLS: 
+    <button onclick="playTestHLS('1708900.mp4')">1708900.mp4</button>
+    <button onclick="playTestHLS('1730099.mp4')">1730099.mp4</button>
+    <button onclick="playTestHLS('1760099.mp4')">1760099.mp4</button> 
+    <br><br>
+    DASH: 
+    <button onclick="playTestDASH('1708900.mp4')">1708900.mp4</button>
+    <button onclick="playTestDASH('1730099.mp4')">1730099.mp4</button>
+    <button onclick="playTestDASH('1760099.mp4')">1760099.mp4</button> 
+  </body>
+</html>
