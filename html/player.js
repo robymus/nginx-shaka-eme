@@ -1,8 +1,3 @@
-// myapp.js
-
-var manifestUri =
-    'https://storage.googleapis.com/shaka-demo-assets/angel-one/dash.mpd';
-
 let logger;
 let player;
 let videp;
