@@ -67,7 +67,7 @@ function getKey($kid)
 	return md5('secret' . $kid, true);
 }
 
-// TODO: add security controls and error validation
+// TODO: add security controls and access validation
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST')
 {
